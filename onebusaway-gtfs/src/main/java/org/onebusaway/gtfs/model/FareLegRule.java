@@ -54,6 +54,12 @@ public final class FareLegRule extends IdentityBean<String> {
   @CsvField(name = "distance_type", optional = true)
   private Integer distanceType;
 
+  @CsvField(name = "from_timeframe_id", optional = true, mapping = EntityFieldMappingFactory.class)
+  private Timeframe fromTimeframeId;
+
+  @CsvField(name = "to_timeframe_id", optional = true, mapping = EntityFieldMappingFactory.class)
+  private Timeframe toTimeframeId;
+
   public String getLegGroupId() {
     return legGroupId;
   }
@@ -145,5 +151,21 @@ public final class FareLegRule extends IdentityBean<String> {
 
   public void setDistanceType(Integer distanceType) {
     this.distanceType = distanceType;
+  }
+
+  public Timeframe getFromTimeframeId() {
+    return fromTimeframeId;
+  }
+
+  public void setToTimeframeId(Timeframe toTimeframeId) {
+    this.toTimeframeId = toTimeframeId;
+  }
+
+  public Timeframe getToTimeframeId() {
+    return toTimeframeId;
+  }
+
+  public void setFromTimeframeId( Timeframe fromTimeframeId) {
+    this.fromTimeframeId = fromTimeframeId;
   }
 }
