@@ -85,6 +85,13 @@ public interface GtfsDao extends GenericDao {
   Collection<RiderCategory> getAllRiderCategories();
 
   /****
+   * {@link Timeframe} Methods
+   ***/
+  Collection<Timeframe> getAllTimeframes();
+  Timeframe getTimeframeForId(String id);
+
+
+  /****
    * {@link FareRule} Methods
    ***/
 

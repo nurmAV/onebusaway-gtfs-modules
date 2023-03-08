@@ -125,6 +125,16 @@ public class GtfsDataServiceImpl implements GtfsDataService {
     }
 
     @Override
+    public Collection<Timeframe> getAllTimeframes() {
+        return _dao.getAllTimeframes();
+    }
+
+    @Override
+    public Timeframe getTimeframeForId(String id) {
+        return _dao.getTimeframeForId(id);
+    }
+
+    @Override
     public List<Route> getRoutesForAgency(Agency agency) {
         return _dao.getRoutesForAgency(agency);
     }

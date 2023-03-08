@@ -54,6 +54,7 @@ public class GtfsEntitySchemaFactory {
     entityClasses.add(RiderCategory.class);
     entityClasses.add(FareContainer.class);
     entityClasses.add(FareProduct.class);
+    entityClasses.add(Timeframe.class);
     entityClasses.add(FareLegRule.class);
     entityClasses.add(FareAttribute.class);
     entityClasses.add(FareRule.class);

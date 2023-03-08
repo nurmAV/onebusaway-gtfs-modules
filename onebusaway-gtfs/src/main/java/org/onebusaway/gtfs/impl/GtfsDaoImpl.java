@@ -184,6 +184,8 @@ public class GtfsDaoImpl extends GenericDaoImpl implements GtfsMutableDao {
     return getAllEntitiesForType(FareTransferRule.class);
   }
 
+  public Collection<Timeframe> getAllTimeframes() { return getAllEntitiesForType(Timeframe.class);}
+  public Timeframe getTimeframeForId(String id) { return getEntityForId(Timeframe.class, id);}
   @Override
   public FeedInfo getFeedInfoForId(String id) {
     return getEntityForId(FeedInfo.class, id);
