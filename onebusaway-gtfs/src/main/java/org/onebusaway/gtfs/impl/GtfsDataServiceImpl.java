@@ -135,6 +135,14 @@ public class GtfsDataServiceImpl implements GtfsDataService {
     }
 
     @Override
+    public Collection<FareCapping> getAllFareCappings()  {
+        return _dao.getAllFareCappings();
+    }
+    @Override
+    public FareCapping getFareCappingForId(String id) {
+        return _dao.getFareCappingForId(id);
+    }
+    @Override
     public List<Route> getRoutesForAgency(Agency agency) {
         return _dao.getRoutesForAgency(agency);
     }

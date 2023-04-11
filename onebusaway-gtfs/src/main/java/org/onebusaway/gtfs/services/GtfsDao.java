@@ -91,6 +91,8 @@ public interface GtfsDao extends GenericDao {
   Timeframe getTimeframeForId(String id);
 
 
+  Collection<FareCapping> getAllFareCappings();
+  FareCapping getFareCappingForId(String id);
   /****
    * {@link FareRule} Methods
    ***/
